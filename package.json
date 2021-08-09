@@ -1,0 +1,13 @@
+{
+	"dependencies": {
+		"tailwindcss-cli": "^0.1.2"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.3.1",
+		"postcss": "^8.3.6",
+		"tailwindcss": "^2.2.7"
+	},
+	"scripts": {
+		"tailwind-build": "tailwindcss build src/tailwind.css -o public/css/tailwind.output.css"
+	}
+}
