@@ -18,6 +18,27 @@
 			body {
 				font-family: "Inter", sans-serif;
 			}
+
+			@keyframes animatedBackground {
+				from {
+					background-position: 0 0;
+				}
+				50% {
+					background-position: 50% 0;
+				}
+				to {
+					background-position: 100% 0;
+				}
+			}
+
+			#animate-area {
+				width: 100vw;
+				height: 536px;
+				background-image: url("./img/portfolio/portafolio-preview.png");
+				background-position: 0px 0px;
+				background-repeat: repeat-x;
+				animation: animatedBackground 40s linear infinite;
+			}
 		</style>
 	</head>
 	<body class="antialiased overflow-x-hidden">
@@ -30,13 +51,14 @@
 					to-purple-800
 					min-h-screen
 					h-full
+					relative
 				"
 			>
-				<header class="text-center max-w-xl mx-auto text-white pt-6">
+				<header class="text-center max-w-xl mx-auto text-white pt-24">
 					<h1 class="text-5xl font-semibold">
 						Transforma tu empresa al mundo digital.
 					</h1>
-					<p>
+					<p class="mt-2">
 						Adapta tu negocio al nuevo mundo con nuestro grupo de profesionales.
 					</p>
 				</header>
@@ -46,12 +68,13 @@
 						text-center
 						grid grid-cols-1
 						gap-3
+						mt-4
 						justify-center
 						sm:flex sm:gap-0 sm:space-x-6
 					"
 				>
 					<a
-						href="#_"
+						href="/portafolio.html"
 						class="
 							rounded
 							relative
@@ -87,10 +110,10 @@
 								opacity-10
 							"
 						></span>
-						<span class="relative">Button Text</span>
+						<span class="relative">Ver portafolio</span>
 					</a>
 					<a
-						href="#_"
+						href="/contacto.html"
 						class="
 							rounded
 							relative
@@ -105,11 +128,8 @@
 							border-b-4 border-l-2
 							active:border-purple-600 active:shadow-none
 							shadow-lg
-							bg-gradient-to-tr
-							from-purple-600
-							to-purple-500
-							border-purple-700
-							text-white
+							bg-white
+							text-gray-800
 						"
 					>
 						<span
@@ -126,27 +146,57 @@
 								opacity-10
 							"
 						></span>
-						<span class="relative">Button Text</span>
+						<span class="relative">Contacto</span>
 					</a>
 				</div>
+				<div class="max-w-5xl mx-auto">
+					<img
+						src="./img/hero/redes-sociales.png"
+						alt="persona viendo redes sociales"
+						class="mx-auto"
+					/>
+					<div class="hidden lg:block">
+						<img
+							src="./img/hero/suma.png"
+							alt=""
+							class="absolute rotate-12 transform"
+							style="left: 320px; top: 240px"
+						/>
+						<img
+							src="./img/hero/subir-nube-internet.png"
+							class="absolute z-20 transform rotate-12"
+							style="left: 350px; top: 500px"
+							alt=""
+						/>
+						<img
+							src="./img/hero/flecha.svg"
+							class="absolute transform rotate-6"
+							style="left: 250px; top: 250px"
+							alt=""
+						/>
 
-				<img
-					src="./img/hero/redes-sociales.png"
-					alt="persona viendo redes sociales"
-					class="mx-auto"
-				/>
+						<img
+							src="./img/hero/mail.png"
+							alt=""
+							class="absolute z-20 transform rotate-6"
+							style="right: 360px; top: 250px"
+						/>
 
-				<img src="./img/hero/suma.png" alt="" class="absolute top-0" />
-				<img
-					src="./img/hero/subir-nube-internet.png"
-					class="absolute left-40 top-96"
-					alt=""
-				/>
-				<img
-					src="./img/hero/flecha.svg"
-					class="absolute left-32 top-80"
-					alt=""
-				/>
+						<img
+							src="./img/hero/flecha.svg"
+							class="absolute transform -rotate-180"
+							style="right: 250px; top: 250px"
+							alt=""
+						/>
+
+						<img
+							src="./img/hero/guardar.png"
+							alt=""
+							class="absolute z-20 transform rotate-6"
+							style="right: 290px; top: 500px"
+						/>
+					</div>
+				</div>
 			</section>
 			<section
 				class="
@@ -160,14 +210,18 @@
 			>
 				<div class="relative mx-auto overflow-hidden py-10 md:py-20">
 					<header>
-						<h2>Ayudamos a crecer tu empresa</h2>
+						<h2 class="text-center font-semibold text-3xl text-white">
+							Ayudamos a <span class="text-blue-300"> digitalizar </span>tu
+							empresa
+						</h2>
 					</header>
-					<div class="md:flex justify-center items-center">
+					<div class="md:flex justify-center items-center mt-10">
 						<div
 							class="
 								grid grid-cols-12
-								justify-start
+								justify-center
 								max-w-md
+								mx-auto
 								text-gray-800
 								gap-y-6
 							"
@@ -180,19 +234,34 @@
 									bg-white
 									shadow-md
 									text-gray-900
+									rounded-md
+									px-4
+									py-2
 								"
 							>
 								<div class="col-span-2">
 									<img src="./img/features/audiovisual.png" alt="" />
 								</div>
-								<div class="col-span-10 ml-2">
+								<div class="col-span-10">
 									<h3 class="font-semibold">Audiovisual</h3>
 									<p>
 										Creamos material con fotos y videos para tus redes sociales.
 									</p>
 								</div>
 							</div>
-							<div class="col-span-12 sm:grid grid-cols-12">
+							<div
+								class="
+									col-span-12
+									sm:grid
+									grid-cols-12
+									bg-white
+									shadow-md
+									text-gray-900
+									rounded-md
+									px-4
+									py-2
+								"
+							>
 								<div class="col-span-2">
 									<img src="./img/features/redes-sociales.png" alt="" />
 								</div>
@@ -204,7 +273,19 @@
 									</p>
 								</div>
 							</div>
-							<div class="col-span-12 sm:grid grid-cols-12">
+							<div
+								class="
+									col-span-12
+									sm:grid
+									grid-cols-12
+									bg-white
+									shadow-md
+									text-gray-900
+									rounded-md
+									px-4
+									py-2
+								"
+							>
 								<div class="col-span-2">
 									<img src="./img/features/desarrollo-web.png" alt="" />
 								</div>
@@ -213,7 +294,19 @@
 									<p>Digitalizamos tu negocio através de una página web.</p>
 								</div>
 							</div>
-							<div class="col-span-12 sm:grid grid-cols-12">
+							<div
+								class="
+									col-span-12
+									sm:grid
+									grid-cols-12
+									bg-white
+									shadow-md
+									text-gray-900
+									rounded-md
+									px-4
+									py-2
+								"
+							>
 								<div class="col-span-2">
 									<img src="./img/features/diseno-grafico.png" alt="" />
 								</div>
@@ -227,7 +320,7 @@
 						</div>
 						<div class="">
 							<img
-								class="transform -rotate-45"
+								class="transform -rotate-45 mx-auto"
 								style="width: 460px"
 								src="./img/features/redes-sociales-iphone.png"
 								alt=""
@@ -250,7 +343,68 @@
 				</div>
 			</section>
 
-			<section class="bg-gray-200 pt-10 md:pt-10">
+			<section class="bg-gray-200 pt-10 md:pt-20">
+				<header class="max-w-xl mx-auto">
+					<h2 class="text-3xl text-center font-semibold text-gray-900">
+						Revisa nuestro trabajo que hemos realizado con distintos clientes
+					</h2>
+					<div
+						class="
+							w-full
+							text-center
+							grid grid-cols-1
+							gap-3
+							mt-2
+							justify-center
+							sm:flex sm:gap-0 sm:space-x-6
+						"
+					>
+						<a
+							href="#_"
+							class="
+								rounded
+								relative
+								inline-flex
+								group
+								items-center
+								justify-center
+								px-3.5
+								py-2
+								m-1
+								cursor-pointer
+								border-b-4 border-l-2
+								active:border-purple-600 active:shadow-none
+								shadow-lg
+								bg-gradient-to-tr
+								from-purple-600
+								to-purple-500
+								border-purple-700
+								text-white
+							"
+						>
+							<span
+								class="
+									absolute
+									w-0
+									h-0
+									transition-all
+									duration-300
+									ease-out
+									bg-white
+									rounded-full
+									group-hover:w-32 group-hover:h-32
+									opacity-10
+								"
+							></span>
+							<span class="relative">Revisar portafolio</span>
+						</a>
+					</div>
+				</header>
+
+				<div id="animate-area"></div>
+			</section>
+
+			<section class="bg-gray-200 pt-10 pb-16 md:pb-40 md:pt-40">
 				<header>
 					<h2
 						class="
@@ -266,7 +420,7 @@
 						negocio
 					</h2>
 				</header>
-				<div class="flex max-w-5xl mx-auto mt-8 gap-y-4">
+				<div class="flex flex-col lg:flex-row max-w-5xl mx-auto mt-8 gap-y-4">
 					<div class="flex max-w-xs mx-auto space-x-4">
 						<img
 							src="./img/steps/anotar-requerimientos.png"
