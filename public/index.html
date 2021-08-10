@@ -39,6 +39,46 @@
 				background-repeat: repeat-x;
 				animation: animatedBackground 40s linear infinite;
 			}
+
+			.icon {
+				-webkit-animation: upNdown 3s infinite linear;
+				animation: upNdown 3s infinite linear;
+			}
+			@-webkit-keyframes upNdown {
+				0% {
+				}
+				50% {
+					transform: translateY(-6px);
+				}
+				100% {
+				}
+			}
+			@keyframes upNdown {
+				0% {
+				}
+				60% {
+					transform: translateY(-6px);
+				}
+				100% {
+				}
+			}
+
+			@-webkit-keyframes rotating {
+				from {
+					-webkit-transform: rotate(0deg);
+				}
+				to {
+					-webkit-transform: rotate(360deg);
+				}
+			}
+
+			.rotating {
+				-webkit-animation: rotating 2s linear infinite;
+			}
+
+			.rotating2 {
+				-webkit-animation: rotating 8s linear infinite;
+			}
 		</style>
 	</head>
 	<body class="overflow-x-hidden antialiased">
@@ -319,12 +359,12 @@
 						<img
 							src="./img/hero/suma.png"
 							alt=""
-							class="absolute transform rotate-12"
+							class="absolute transform rotate-12 icon"
 							style="left: 320px; top: 240px"
 						/>
 						<img
 							src="./img/hero/subir-nube-internet.png"
-							class="absolute z-20 transform rotate-12"
+							class="absolute z-20 transform rotate-12 icon"
 							style="left: 350px; top: 500px"
 							alt=""
 						/>
@@ -338,7 +378,7 @@
 						<img
 							src="./img/hero/mail.png"
 							alt=""
-							class="absolute z-20 transform rotate-6"
+							class="absolute z-20 transform rotate-6 icon"
 							style="right: 360px; top: 250px"
 						/>
 
@@ -352,8 +392,49 @@
 						<img
 							src="./img/hero/guardar.png"
 							alt=""
-							class="absolute z-20 transform rotate-6"
+							class="absolute z-20 transform rotate-6 icon"
 							style="right: 290px; top: 500px"
+						/>
+					</div>
+					<div class="hidden md:block lg:hidden">
+						<img
+							src="./img/hero/suma.png"
+							alt=""
+							class="absolute transform rotate-12 icon"
+							style="left: 100px; top: 240px"
+						/>
+						<img
+							src="./img/hero/subir-nube-internet.png"
+							class="absolute z-20 transform rotate-12 icon"
+							style="left: 100px; top: 500px"
+							alt=""
+						/>
+						<img
+							src="./img/hero/flecha.svg"
+							class="absolute transform rotate-6"
+							style="left: 10px; top: 250px"
+							alt=""
+						/>
+
+						<img
+							src="./img/hero/mail.png"
+							alt=""
+							class="absolute z-20 transform rotate-6 icon"
+							style="right: 120px; top: 250px"
+						/>
+
+						<img
+							src="./img/hero/flecha.svg"
+							class="absolute transform -rotate-180"
+							style="right: 10px; top: 250px"
+							alt=""
+						/>
+
+						<img
+							src="./img/hero/guardar.png"
+							alt=""
+							class="absolute z-20 transform rotate-6 icon"
+							style="right: 50px; top: 500px"
 						/>
 					</div>
 				</div>
