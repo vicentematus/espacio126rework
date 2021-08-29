@@ -38,4 +38,8 @@ function showIndividualContent() {
 	});
 }
 
+function showDefaultContent() {
+	document.getElementById("socialMediaContent").classList.remove("hidden");
+}
+showDefaultContent();
 showIndividualContent();
