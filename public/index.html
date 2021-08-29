@@ -79,6 +79,11 @@
 			.rotating2 {
 				-webkit-animation: rotating 8s linear infinite;
 			}
+
+			.services-icon:hover {
+				transform: translate(0, -10px);
+				transition: all 0.3s ease-in-out;
+			}
 		</style>
 	</head>
 	<body class="overflow-x-hidden antialiased">
@@ -445,76 +450,76 @@
 			>
 				<div class="relative py-10 mx-auto overflow-hidden md:py-20">
 					<header>
-						<h2 class="text-3xl font-semibold text-center text-white">
+						<h2 class="text-4xl font-semibold text-center text-white">
 							Ayudamos a <span class="text-blue-300"> digitalizar </span>tu
 							empresa
 						</h2>
 					</header>
 					<div
-						class="items-center justify-center max-w-5xl px-4 mx-auto mt-10  md:flex"
+						class="flex-col items-center justify-center px-4 mx-auto mt-10 text-white  max-w-7xl md:flex"
 					>
-						<div
-							class="grid justify-center max-w-md grid-cols-12 mx-auto text-gray-800  gap-y-6"
-						>
-							<div
-								class="grid-cols-12 col-span-12 px-4 py-2 text-gray-900 bg-white rounded-md shadow-md  sm:grid"
-							>
-								<div class="col-span-2">
-									<img src="./img/features/audiovisual.png" alt="" />
-								</div>
-								<div class="col-span-10">
-									<h3 class="font-semibold">Audiovisual</h3>
-									<p>
-										Creamos material con fotos y videos para tus redes sociales.
-									</p>
-								</div>
+						<div class="z-50 flex flex-row">
+							<div class="flex items-center justify-center">
+								<a
+									class="inline-block cursor-pointer  hover:text-gray-200 services-icon individual-feature"
+									id="audiovisual"
+								>
+									<div class="flex-col items-center justify-center">
+										<img
+											src="./img/features/audiovisual.png"
+											class="mx-auto"
+											alt=""
+										/>
+										<h3 class="text-2xl font-semibold">Audiovisual</h3>
+									</div>
+								</a>
 							</div>
-							<div
-								class="grid-cols-12 col-span-12 px-4 py-2 text-gray-900 bg-white rounded-md shadow-md  sm:grid"
-							>
-								<div class="col-span-2">
-									<img src="./img/features/redes-sociales.png" alt="" />
-								</div>
-								<div class="col-span-10 ml-2">
-									<h3 class="font-semibold">Redes sociales</h3>
-									<p>
-										Complementamos todas las areas para poder subir material a
-										tu perfil.
-									</p>
-								</div>
+							<div class="flex items-center justify-center">
+								<a
+									class="inline-block cursor-pointer  hover:text-gray-200 services-icon individual-feature"
+									id="social-media"
+								>
+									<img
+										class="mx-auto"
+										src="./img/features/redes-sociales.png"
+										alt=""
+									/>
+									<h3 class="text-2xl font-semibold">Redes Sociales</h3>
+								</a>
 							</div>
-							<div
-								class="grid-cols-12 col-span-12 px-4 py-2 text-gray-900 bg-white rounded-md shadow-md  sm:grid"
-							>
-								<div class="col-span-2">
+							<div class="">
+								<a
+									class="inline-block cursor-pointer  hover:text-gray-200 services-icon individual-feature"
+									id="web-development"
+								>
 									<img src="./img/features/desarrollo-web.png" alt="" />
-								</div>
-								<div class="col-span-10 ml-2">
-									<h3 class="font-semibold">Desarrollo Web</h3>
-									<p>Digitalizamos tu negocio através de una página web.</p>
-								</div>
+									<h3 class="text-2xl font-semibold">Desarollo Web</h3>
+								</a>
 							</div>
-							<div
-								class="grid-cols-12 col-span-12 px-4 py-2 text-gray-900 bg-white rounded-md shadow-md  sm:grid"
-							>
-								<div class="col-span-2">
+							<div class="">
+								<a
+									class="inline-block cursor-pointer  hover:text-gray-200 services-icon individual-feature"
+									id="graphic-design"
+								>
 									<img src="./img/features/diseno-grafico.png" alt="" />
-								</div>
-								<div class="col-span-10 ml-2">
-									<h3 class="font-semibold">Diseño gráfico</h3>
-									<p>
-										Creamos material con fotos y videos para tus redes sociales.
-									</p>
-								</div>
+									<h3 class="text-2xl font-semibold">Desarollo Web</h3>
+								</a>
 							</div>
 						</div>
-						<div class="">
-							<img
-								class="mx-auto transform -rotate-45"
-								style="width: 460px"
-								src="./img/features/redes-sociales-iphone.png"
-								alt=""
-							/>
+
+						<div id="audiovisualContent" class="hidden feature-content">
+							<p>Nos encargamos de grabar videos y todo blablablaa</p>
+						</div>
+
+						<div id="socialMediaContent" class="hidden feature-content">
+							<p>Esto es social media</p>
+						</div>
+
+						<div id="webDevelopmentContent" class="hidden feature-content">
+							<p>Esto tiene que ver con paginas webs</p>
+						</div>
+						<div id="graphicDesignContent" class="hidden feature-content">
+							<p>Esto tiene que ver con diseno grafico martin webs</p>
 						</div>
 					</div>
 				</div>
@@ -674,6 +679,7 @@
 			</section>
 		</main>
 
+		<script src="./js/main.js" type="module"></script>
 		<script>
 			// Burger menus
 			document.addEventListener("DOMContentLoaded", function () {
