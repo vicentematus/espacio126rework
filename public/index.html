@@ -79,6 +79,11 @@
 			.rotating2 {
 				-webkit-animation: rotating 8s linear infinite;
 			}
+
+			.services-icon:hover {
+				transform: translate(0, -10px);
+				transition: all 0.3s ease-in-out;
+			}
 		</style>
 	</head>
 	<body class="overflow-x-hidden antialiased">
@@ -445,83 +450,551 @@
 			>
 				<div class="relative py-10 mx-auto overflow-hidden md:py-20">
 					<header>
-						<h2 class="text-3xl font-semibold text-center text-white">
+						<h2 class="text-4xl font-semibold text-center text-white">
 							Ayudamos a <span class="text-blue-300"> digitalizar </span>tu
 							empresa
 						</h2>
 					</header>
 					<div
-						class="items-center justify-center max-w-5xl px-4 mx-auto mt-10  md:flex"
+						class="flex-col items-center justify-center px-4 mx-auto mt-10 text-white  max-w-7xl md:flex"
 					>
 						<div
-							class="grid justify-center max-w-md grid-cols-12 mx-auto text-gray-800  gap-y-6"
+							class="z-50 grid grid-cols-12  gap-x-4 gap-y-6 md:flex md:flex-row md:gap-x-10"
 						>
-							<div
-								class="grid-cols-12 col-span-12 px-4 py-2 text-gray-900 bg-white rounded-md shadow-md  sm:grid"
-							>
-								<div class="col-span-2">
-									<img src="./img/features/audiovisual.png" alt="" />
-								</div>
-								<div class="col-span-10">
-									<h3 class="font-semibold">Audiovisual</h3>
-									<p>
-										Creamos material con fotos y videos para tus redes sociales.
-									</p>
-								</div>
+							<div class="flex items-center justify-center col-span-6">
+								<a
+									class="inline-block cursor-pointer  hover:text-gray-200 services-icon individual-feature"
+									id="audiovisual"
+								>
+									<div class="flex-col items-center justify-center">
+										<img
+											src="./img/features/audiovisual.png"
+											class="mx-auto"
+											alt=""
+										/>
+										<h3 class="text-2xl font-semibold">Audiovisual</h3>
+									</div>
+								</a>
 							</div>
-							<div
-								class="grid-cols-12 col-span-12 px-4 py-2 text-gray-900 bg-white rounded-md shadow-md  sm:grid"
-							>
-								<div class="col-span-2">
-									<img src="./img/features/redes-sociales.png" alt="" />
-								</div>
-								<div class="col-span-10 ml-2">
-									<h3 class="font-semibold">Redes sociales</h3>
-									<p>
-										Complementamos todas las areas para poder subir material a
-										tu perfil.
-									</p>
-								</div>
+							<div class="flex items-center justify-center col-span-6">
+								<a
+									class="inline-block cursor-pointer  hover:text-gray-200 services-icon individual-feature"
+									id="social-media"
+								>
+									<img
+										class="mx-auto"
+										src="./img/features/redes-sociales.png"
+										alt=""
+									/>
+									<h3 class="text-2xl font-semibold">Redes Sociales</h3>
+								</a>
 							</div>
-							<div
-								class="grid-cols-12 col-span-12 px-4 py-2 text-gray-900 bg-white rounded-md shadow-md  sm:grid"
-							>
-								<div class="col-span-2">
-									<img src="./img/features/desarrollo-web.png" alt="" />
-								</div>
-								<div class="col-span-10 ml-2">
-									<h3 class="font-semibold">Desarrollo Web</h3>
-									<p>Digitalizamos tu negocio através de una página web.</p>
-								</div>
+							<div class="flex items-center justify-center col-span-6">
+								<a
+									class="inline-block cursor-pointer  hover:text-gray-200 services-icon individual-feature"
+									id="web-development"
+								>
+									<img
+										src="./img/features/desarrollo-web.png"
+										class="mx-auto"
+										alt=""
+									/>
+									<h3 class="text-2xl font-semibold">Desarollo Web</h3>
+								</a>
 							</div>
-							<div
-								class="grid-cols-12 col-span-12 px-4 py-2 text-gray-900 bg-white rounded-md shadow-md  sm:grid"
-							>
-								<div class="col-span-2">
-									<img src="./img/features/diseno-grafico.png" alt="" />
+							<div class="flex items-center justify-center col-span-6">
+								<a
+									class="inline-block cursor-pointer  hover:text-gray-200 services-icon individual-feature"
+									id="graphic-design"
+								>
+									<img
+										src="./img/features/diseno-grafico.png"
+										class="mx-auto"
+										alt=""
+									/>
+									<h3 class="text-2xl font-semibold">Diseño gráfico</h3>
+								</a>
+							</div>
+						</div>
+
+						<div
+							id="audiovisualContent"
+							class="hidden max-w-4xl mx-auto feature-content"
+						>
+							<div class="z-50 md:flex md:flex:justify-center md:items-center">
+								<div class="space-y-4 md:w-1/2">
+									<div>
+										<div
+											class="inline-flex items-center justify-center gap-x-2"
+										>
+											<div
+												class="inline-flex items-center justify-center w-12 h-12 bg-white rounded-md "
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-8 h-8 text-gray-300"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+													/>
+												</svg>
+											</div>
+											<p class="text-xl font-semibold">Grabacion de videos</p>
+										</div>
+										<p>
+											Creamos capsulas de videos para la grabación de tus
+											productos o servicios.
+										</p>
+									</div>
+									<div>
+										<div
+											class="inline-flex items-center justify-center gap-x-2"
+										>
+											<div
+												class="inline-flex items-center justify-center w-12 h-12 bg-white rounded-md "
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-8 h-8 text-gray-300"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+													/>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
+													/>
+												</svg>
+											</div>
+											<p class="text-xl font-semibold">Fotografía</p>
+										</div>
+										<p>
+											Fotografiamos tu producto o servicio para que pueda ser
+											visualizado de una manera profesional ante tus clientes.
+										</p>
+									</div>
+
+									<div>
+										<a
+											href="/audiovisual.html"
+											class="z-50 inline-flex items-center justify-center text-2xl font-semibold text-green-100  hover:text-green-300"
+										>
+											Ver portafolio audiovisual
+											<span>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-6 h-6"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+													/>
+												</svg>
+											</span>
+										</a>
+									</div>
 								</div>
-								<div class="col-span-10 ml-2">
-									<h3 class="font-semibold">Diseño gráfico</h3>
-									<p>
-										Creamos material con fotos y videos para tus redes sociales.
-									</p>
+								<div class="md:w-1/2">
+									<img
+										src="./img/features/audiovisual-ilustracion.png"
+										alt=""
+										class=""
+										style="width: 500px"
+									/>
 								</div>
 							</div>
 						</div>
-						<div class="">
-							<img
-								class="mx-auto transform -rotate-45"
-								style="width: 460px"
-								src="./img/features/redes-sociales-iphone.png"
-								alt=""
-							/>
+
+						<div
+							id="socialMediaContent"
+							class="hidden max-w-4xl mx-auto feature-content"
+						>
+							<div class="z-50 md:flex md:flex:justify-center md:items-center">
+								<div class="space-y-4 md:w-1/2">
+									<div>
+										<div
+											class="inline-flex items-center justify-center gap-x-2"
+										>
+											<div
+												class="inline-flex items-center justify-center w-12 h-12 bg-white rounded-md "
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-8 h-8 text-gray-300"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+													/>
+												</svg>
+											</div>
+											<p class="text-xl font-semibold">Funnel de ventas</p>
+										</div>
+										<p>
+											Generamos publicaciones a partir de las necesidades de tu
+											empresa, filtrando a tus clientes para conseguir lo que
+											necesitan.
+										</p>
+									</div>
+									<div>
+										<div
+											class="inline-flex items-center justify-center gap-x-2"
+										>
+											<div
+												class="inline-flex items-center justify-center w-12 h-12 bg-white rounded-md "
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-8 h-8 text-gray-300"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+													/>
+												</svg>
+											</div>
+											<p class="text-xl font-semibold">
+												Creación de post en redes sociales
+											</p>
+										</div>
+										<p>
+											Diseñamos graficamente publicaciones para que mejores el
+											aspecto visual de tu comercio.
+										</p>
+									</div>
+									<div>
+										<div
+											class="inline-flex items-center justify-center gap-x-2"
+										>
+											<div
+												class="inline-flex items-center justify-center w-12 h-12 bg-white rounded-md "
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-8 h-8 text-gray-300"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+													/>
+												</svg>
+											</div>
+											<p class="text-xl font-semibold">
+												Generacion de contenido
+											</p>
+										</div>
+										<p>
+											Nos encargamos de generar contenido de redes sociales para
+											tu red social
+										</p>
+									</div>
+									<div>
+										<a
+											href="/redes-sociales.html"
+											class="z-50 inline-flex items-center justify-center text-2xl font-semibold text-green-100  hover:text-green-300"
+										>
+											Ver portafolio de redes sociales
+											<span>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-6 h-6"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+													/>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="md:w-1/2">
+									<img
+										src="./img/features/redes-sociales-iphone.png"
+										alt=""
+										class="transform rotate-12"
+										style="width: 500px"
+									/>
+								</div>
+							</div>
+						</div>
+
+						<div
+							id="webDevelopmentContent"
+							class="hidden max-w-4xl mx-auto feature-content"
+						>
+							<div class="z-50 md:flex md:flex:justify-center md:items-center">
+								<div class="space-y-4 md:w-1/2">
+									<div>
+										<div
+											class="inline-flex items-center justify-center gap-x-2"
+										>
+											<div
+												class="inline-flex items-center justify-center w-12 h-12 bg-white rounded-md "
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-8 h-8 text-gray-300"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+													/>
+												</svg>
+											</div>
+											<p class="text-xl font-semibold">E-commerce</p>
+										</div>
+										<p>
+											Desarrollamos tu tienda online con tecnologías para que
+											puedas vender tus productos online. Totalmente
+											autoadministrable.
+										</p>
+									</div>
+									<div>
+										<div
+											class="inline-flex items-center justify-center gap-x-2"
+										>
+											<div
+												class="inline-flex items-center justify-center w-12 h-12 bg-white rounded-md "
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-8 h-8 text-gray-300"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+													/>
+												</svg>
+											</div>
+											<p class="text-xl font-semibold">Pagínas Informativas</p>
+										</div>
+										<p>
+											Creamos tu página web con información resumida de tu
+											empresa, para que tengas una presencia digital.
+										</p>
+									</div>
+									<div>
+										<div
+											class="inline-flex items-center justify-center gap-x-2"
+										>
+											<div
+												class="inline-flex items-center justify-center w-12 h-12 bg-white rounded-md "
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-8 h-8 text-gray-300"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+													/>
+												</svg>
+											</div>
+											<p class="text-xl font-semibold">Posicionamiento Web</p>
+										</div>
+										<p>
+											Mediante nuestros servicios de posicionamiento web podrás
+											ir escalando con el tiempo a las primeras posiciones de
+											Google.
+										</p>
+									</div>
+									<div>
+										<a
+											href="/desarrollo-web.html"
+											class="z-50 inline-flex items-center justify-center text-2xl font-semibold text-green-100  hover:text-green-300"
+										>
+											Ver portafolio de desarrollo web
+											<span>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-6 h-6"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+													/>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="flex items-center md:w-1/2">
+									<img
+										src="./img/features/desarrollo-web-ilustracion.png"
+										alt=""
+										class="mx-auto"
+										style="width: 500px"
+									/>
+								</div>
+							</div>
+						</div>
+						<div
+							id="graphicDesignContent"
+							class="hidden max-w-4xl mx-auto feature-content"
+						>
+							<div class="z-50 md:flex md:flex:justify-center md:items-center">
+								<div class="space-y-4 md:w-1/2">
+									<div>
+										<div
+											class="inline-flex items-center justify-center gap-x-2"
+										>
+											<div
+												class="inline-flex items-center justify-center w-12 h-12 bg-white rounded-md "
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-8 h-8 text-gray-300"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+													/>
+												</svg>
+											</div>
+											<p class="text-xl font-semibold">Creación de marca</p>
+										</div>
+										<p>
+											Generamos la identidad visual de tu empresa para que
+											puedas darle forma a tu empresa.
+										</p>
+									</div>
+									<div>
+										<div
+											class="inline-flex items-center justify-center gap-x-2"
+										>
+											<div
+												class="inline-flex items-center justify-center w-12 h-12 bg-white rounded-md "
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-8 h-8 text-gray-300"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+													/>
+												</svg>
+											</div>
+											<p class="text-xl font-semibold">Creación de Logotipos</p>
+										</div>
+										<p>
+											Generamos el logo de tu empresa encapsulando todos los
+											elementos claves de esta.
+										</p>
+									</div>
+
+									<div>
+										<a
+											href="/diseno-grafico.html"
+											class="z-50 inline-flex items-center justify-center text-2xl font-semibold text-green-100  hover:text-green-300"
+										>
+											Ver portafolio de diseno grafico
+											<span>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													class="w-6 h-6"
+													fill="none"
+													viewBox="0 0 24 24"
+													stroke="currentColor"
+												>
+													<path
+														stroke-linecap="round"
+														stroke-linejoin="round"
+														stroke-width="2"
+														d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+													/>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="flex items-center md:w-1/2">
+									<img
+										src="./img/features/diseno-grafico-ilustracion.png"
+										alt=""
+										class="mx-auto"
+										style="width: 500px"
+									/>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div style="height: 150px; overflow: hidden">
+				<div style="height: 150px; overflow: hidden" class="mt-10">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 1440 320"
+						style="z-index: 0"
 						class="absolute bottom-0"
 					>
 						<path
@@ -674,6 +1147,7 @@
 			</section>
 		</main>
 
+		<script src="./js/main.js" type="module"></script>
 		<script>
 			// Burger menus
 			document.addEventListener("DOMContentLoaded", function () {
