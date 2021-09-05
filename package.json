@@ -8,6 +8,6 @@
 		"tailwindcss": "^2.2.7"
 	},
 	"scripts": {
-		"tailwind-build": "tailwindcss build src/tailwind.css -o public/css/tailwind.output.css"
+		"tailwind-build": "tailwindcss build -i src/tailwind.css -o public/css/tailwind.output.css"
 	}
 }
