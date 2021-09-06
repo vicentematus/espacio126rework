@@ -1,9 +1,13 @@
 module.exports = {
 	purge: ["./src/**/*.html", "./src/**/*.js"],
 	darkMode: false, // or 'media' or 'class'
-	theme: {},
-	variants: {
+	theme: {
 		extend: {},
+	},
+	variants: {
+		extend: {
+			divideColor: ["group-hover"],
+		},
 	},
 	plugins: [],
 };
